@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Covid-19 Bangladesh</string>
+    <string name="hospital">Hospital</string>
+    <string name="trace">Trace World</string>
+    <string name="bd">Trace Bangladesh</string>
+    <string name="instruction">Instructions</string>
+    <string name="title_activity_hospitalfind">Map</string>
+</resources>
