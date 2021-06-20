@@ -76,7 +76,7 @@
                             android:fontFamily="sans-serif-light"
                             android:text="Icu"
                             android:textStyle="bold"
-                            android:textColor="	#FFF"
+                            android:textColor="#00008B"
 
                             android:textSize="18sp"/>
                         <TextView

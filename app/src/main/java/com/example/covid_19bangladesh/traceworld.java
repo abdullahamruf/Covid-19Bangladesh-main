@@ -1,6 +1,5 @@
 package com.example.covid_19bangladesh;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
@@ -12,15 +11,13 @@ import android.widget.Button;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-
-
+import com.leo.simplearcloader.SimpleArcLoader;
 import org.eazegraph.lib.charts.PieChart;
 import org.eazegraph.lib.models.PieModel;
 import org.json.JSONException;
@@ -29,7 +26,7 @@ import org.json.JSONObject;
 public class traceworld extends AppCompatActivity {
 
     TextView tvCases, tvRecovered, tvCritical, tvActive, tvTodayCases, tvTotalDeaths, tvTodayDeaths, tvAffectedCountries;
-   // SimpleArcLoader simpleArcLoader;
+    SimpleArcLoader simpleArcLoader;
     ScrollView scrollView;
     PieChart pieChart;
 
@@ -48,7 +45,7 @@ public class traceworld extends AppCompatActivity {
         tvTodayDeaths = findViewById(R.id.tvTodayDeaths);
         tvAffectedCountries = findViewById(R.id.tvAffectedCountries);
 
-        //simpleArcLoader = findViewById(R.id.loader);
+        simpleArcLoader = findViewById(R.id.loader);
         scrollView = findViewById(R.id.scrollStats);
         pieChart = findViewById(R.id.piechart);
 
@@ -61,7 +58,7 @@ public class traceworld extends AppCompatActivity {
 
         String url = "https://corona.lmao.ninja/v2/all/";
 
-        //simpleArcLoader.start();
+        simpleArcLoader.start();
 
         StringRequest request = new StringRequest(Request.Method.GET, url,
                 new Response.Listener<String>() {
@@ -87,15 +84,15 @@ public class traceworld extends AppCompatActivity {
                             pieChart.addPieSlice(new PieModel("Active", Integer.parseInt(tvActive.getText().toString()), Color.parseColor("#FF0000")));
                             pieChart.startAnimation();
 
-                          //  simpleArcLoader.stop();
-                           // simpleArcLoader.setVisibility(View.GONE);
+                            simpleArcLoader.stop();
+                            simpleArcLoader.setVisibility(View.GONE);
                             scrollView.setVisibility(View.VISIBLE);
 
 
                         } catch (JSONException e) {
                             e.printStackTrace();
-                           // simpleArcLoader.stop();
-                           // simpleArcLoader.setVisibility(View.GONE);
+                            simpleArcLoader.stop();
+                            simpleArcLoader.setVisibility(View.GONE);
                             scrollView.setVisibility(View.VISIBLE);
                         }
 
@@ -104,8 +101,8 @@ public class traceworld extends AppCompatActivity {
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-               // simpleArcLoader.stop();
-               // simpleArcLoader.setVisibility(View.GONE);
+                simpleArcLoader.stop();
+                simpleArcLoader.setVisibility(View.GONE);
                 scrollView.setVisibility(View.VISIBLE);
                 Toast.makeText(traceworld.this, error.getMessage(), Toast.LENGTH_SHORT).show();
             }
@@ -119,19 +116,10 @@ public class traceworld extends AppCompatActivity {
 
     public void goTrackCountries(View view) {
 
-        //startActivity(new Intent(getApplicationContext(), AffectedCountries.class));
+        startActivity(new Intent(getApplicationContext(), AffectedCountries.class));
 
     }
-
-    public boolean onCreateOptionsMenu(Menu menu) {
-
-     //   getMenuInflater().inflate(R.menu.maruf, menu);
-        return true;
-    }
-
-
-    }
-
+}
 
 
 

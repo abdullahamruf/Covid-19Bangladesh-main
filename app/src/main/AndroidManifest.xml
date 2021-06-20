@@ -20,7 +20,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Covid19Bangladesh">
-        <activity android:name=".traceworld"></activity>
+        <activity android:name=".DetailActivity"
+
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+
+
+        </activity>
+        <activity
+            android:name=".AffectedCountries"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"></activity>
+        <activity android:name=".traceworld" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").

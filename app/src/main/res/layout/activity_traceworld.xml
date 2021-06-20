@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff"
-    tools:context=".traceworld">
+    tools:context=".MainActivity">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -50,7 +50,7 @@
                     <View
                         android:layout_width="15dp"
                         android:layout_height="match_parent"
-                        android:background="@color/black"/>
+                        android:background="@color/cases"/>
                     <TextView
                         android:textColor="#000000"
                         android:textStyle="bold"
@@ -69,7 +69,7 @@
                     <View
                         android:layout_width="15dp"
                         android:layout_height="match_parent"
-                        android:background="@color/purple_200"/>
+                        android:background="@color/recovered"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -88,7 +88,7 @@
                     <View
                         android:layout_width="15dp"
                         android:layout_height="match_parent"
-                        android:background="@color/teal_200"/>
+                        android:background="@color/deaths"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -107,7 +107,7 @@
                     <View
                         android:layout_width="15dp"
                         android:layout_height="match_parent"
-                        android:background="@color/teal_700"/>
+                        android:background="@color/active"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -143,7 +143,15 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             >
-
+            <com.leo.simplearcloader.SimpleArcLoader
+                android:visibility="visible"
+                android:id="@+id/loader"
+                android:layout_centerInParent="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:arc_style="simple_arc"
+                >
+            </com.leo.simplearcloader.SimpleArcLoader>
 
             <ScrollView
                 android:layout_width="match_parent"
@@ -204,8 +212,7 @@
                             android:textColor="#8b0000"
                             android:textStyle="bold"
                             android:fontFamily="sans-serif-light"
-                            android:layout_alignParentRight="true"
-                            android:gravity="end" />
+                            android:layout_alignParentRight="true"/>
 
                     </RelativeLayout>
                     <View
@@ -241,8 +248,7 @@
                             android:textColor="#8b0000"
                             android:textStyle="bold"
                             android:fontFamily="sans-serif-light"
-                            android:layout_alignParentRight="true"
-                            android:gravity="end" />
+                            android:layout_alignParentRight="true"/>
 
                     </RelativeLayout>
                     <View
@@ -279,8 +285,7 @@
                             android:textColor="#8b0000"
                             android:textStyle="bold"
                             android:fontFamily="sans-serif-light"
-                            android:layout_alignParentRight="true"
-                            android:gravity="end" />
+                            android:layout_alignParentRight="true"/>
 
                     </RelativeLayout>
                     <View
@@ -317,8 +322,7 @@
                             android:textColor="#8b0000"
                             android:textStyle="bold"
                             android:fontFamily="sans-serif-light"
-                            android:layout_alignParentRight="true"
-                            android:gravity="end" />
+                            android:layout_alignParentRight="true"/>
 
                     </RelativeLayout>
                     <View
@@ -355,8 +359,7 @@
                             android:textColor="#8b0000"
                             android:textStyle="bold"
                             android:fontFamily="sans-serif-light"
-                            android:layout_alignParentRight="true"
-                            android:gravity="end" />
+                            android:layout_alignParentRight="true"/>
 
                     </RelativeLayout>
                     <View
@@ -393,8 +396,7 @@
                             android:textColor="#8b0000"
                             android:textStyle="bold"
                             android:fontFamily="sans-serif-light"
-                            android:layout_alignParentRight="true"
-                            android:gravity="end" />
+                            android:layout_alignParentRight="true"/>
 
                     </RelativeLayout>
                     <View
@@ -432,8 +434,7 @@
                             android:textColor="#8b0000"
                             android:textStyle="bold"
                             android:fontFamily="sans-serif-light"
-                            android:layout_alignParentRight="true"
-                            android:gravity="end" />
+                            android:layout_alignParentRight="true"/>
 
                     </RelativeLayout>
                     <View
@@ -470,8 +471,7 @@
                             android:textColor="#8b0000"
                             android:textStyle="bold"
                             android:fontFamily="sans-serif-light"
-                            android:layout_alignParentRight="true"
-                            android:gravity="end" />
+                            android:layout_alignParentRight="true"/>
 
                     </RelativeLayout>
                     <View
@@ -498,7 +498,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_margin="20dp"
-        android:background="#fff"
+        android:background="@color/purple_500"
         android:text="all country"
         android:textColor="@android:color/white"
         android:textSize="15sp"
