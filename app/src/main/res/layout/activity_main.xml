@@ -4,22 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000"
+
+    android:background="@drawable/cb"
     tools:context=".MainActivity">
 
     <GridLayout
         android:id="@+id/home_grid"
-
+android:layout_marginTop="60dp"
         android:columnCount="2"
         android:rowCount="2"
         android:alignmentMode="alignMargins"
         android:columnOrderPreserved="false"
-        android:layout_weight="8"
+        android:layout_weight="4"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:padding="14dp">
 
-<androidx.cardview.widget.CardView
+        <androidx.cardview.widget.CardView
             android:layout_width="0dp"
             android:layout_gravity="fill"
             android:layout_height="0dp"
@@ -29,6 +30,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             app:cardElevation="8dp"
+            android:backgroundTint="@color/cardview_dark_background"
 
             android:id="@+id/dhaka"
             app:cardCornerRadius="8dp"
@@ -52,7 +54,7 @@
                 <TextView
                     android:text="@string/hospital"
                     android:textAlignment="center"
-                    android:textColor="@color/black"
+                    android:textColor="#fff"
                     android:textSize="18sp"
 
                     android:textStyle="bold"
@@ -71,6 +73,7 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:id="@+id/world"
+            android:backgroundTint="@color/cardview_dark_background"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
@@ -97,7 +100,7 @@
                 <TextView
                     android:text="@string/trace"
                     android:textAlignment="center"
-                    android:textColor="@android:color/black"
+                    android:textColor="#fff"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_width="wrap_content"
@@ -116,7 +119,7 @@
             android:layout_rowWeight="1"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
-
+            android:backgroundTint="@color/cardview_dark_background"
             android:layout_marginRight="16dp"
             app:cardElevation="8dp"
             app:cardCornerRadius="8dp"
@@ -140,7 +143,7 @@
                 <TextView
                     android:text="@string/bd"
                     android:textAlignment="center"
-                    android:textColor="@android:color/black"
+                    android:textColor="#fff"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_width="wrap_content"
@@ -161,7 +164,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             app:cardElevation="8dp"
-
+            android:backgroundTint="@color/cardview_dark_background"
             app:cardCornerRadius="8dp"
             >
 
@@ -183,7 +186,7 @@
                 <TextView
                     android:text="@string/instruction"
                     android:textAlignment="center"
-                    android:textColor="@android:color/black"
+                    android:textColor="#fff"
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_width="wrap_content"

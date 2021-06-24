@@ -5,7 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ScrollView;
 import android.widget.TextView;
@@ -29,8 +32,7 @@ public class Hospital extends AppCompatActivity {
         call7= findViewById(R.id.callbutton7);
         call8= findViewById(R.id.callbutton8);
         call9= findViewById(R.id.callbutton9);
-        btn= findViewById(R.id.btnTrac);
-
+        btn=findViewById(R.id.btnTrac);
 
 
 
@@ -38,7 +40,7 @@ public class Hospital extends AppCompatActivity {
 
 
         scrollView.setVisibility(View.VISIBLE);
-        Toast.makeText(getApplicationContext(),"COVID-19 HOSPITAL IN DHAKA CITY",Toast.LENGTH_SHORT).show();
+       // Toast.makeText(getApplicationContext(),"COVID-19 HOSPITAL IN DHAKA CITY",Toast.LENGTH_LONG).show();
 
         call1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -130,7 +132,23 @@ public class Hospital extends AppCompatActivity {
 
             }
         });
+btn.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        startActivity(new Intent(getApplicationContext(),alldivision.class));
 
+            LayoutInflater inflater = getLayoutInflater();
+            View layout = inflater.inflate(R.layout.custom_toast, (ViewGroup) findViewById(R.id.custom_toast_container));
+            TextView tv = (TextView) layout.findViewById(R.id.txtvw);
+            tv.setText("Click Your Divison To See Hospital");
+            Toast toast = new Toast(getApplicationContext());
+            toast.setGravity(Gravity.BOTTOM, 0, 100);
+            toast.setDuration(Toast.LENGTH_LONG);
+            toast.setView(layout);
+            toast.show();
+
+    }
+});
 
 
 
@@ -144,4 +162,7 @@ public class Hospital extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), hospitalfind.class));
 
     }
+ //  public void goTrackdivison(){
+       //startActivity(new Intent(getApplicationContext(), ScrollingActivity.class));
+  // }
 }

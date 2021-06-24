@@ -1788,11 +1788,11 @@
         android:layout_margin="8dp"
         android:background="@drawable/round"
         android:text="all division"
-        android:onClick="goTrackdivison"
         android:textColor="@android:color/white"
         android:textSize="15sp"
         android:padding="5dp"
-        tools:ignore="OnClick" />
+        android:layout_marginRight="5dp"
+         />
     <Button
 
         android:id="@+id/btnTrac1"
@@ -1807,7 +1807,6 @@
         android:onClick="goTrackhospital"
         android:textColor="@android:color/white"
         android:textSize="15sp"
-
         android:padding="5dp"
         tools:ignore="OnClick"
         android:layout_alignParentRight="true" />

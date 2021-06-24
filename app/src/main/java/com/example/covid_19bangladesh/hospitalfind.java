@@ -27,6 +27,8 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.Polyline;
+import com.google.android.gms.maps.model.PolylineOptions;
 
 public class hospitalfind extends FragmentActivity implements
         OnMapReadyCallback,
@@ -41,6 +43,8 @@ public class hospitalfind extends FragmentActivity implements
     int i;
     private double latitide;
     private double longitude;
+
+
     private Marker currentUserLocationMarker;
     private static final int Request_User_Location_Code = 99;
 
@@ -61,6 +65,7 @@ public class hospitalfind extends FragmentActivity implements
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+
     }
 
 
@@ -75,6 +80,7 @@ public class hospitalfind extends FragmentActivity implements
 
             mMap.setMyLocationEnabled(true);
         }
+
 
     }
 
@@ -146,6 +152,7 @@ public class hospitalfind extends FragmentActivity implements
         if (googleApiClient != null) {
             LocationServices.FusedLocationApi.removeLocationUpdates(googleApiClient, this);
         }
+
     }
     public void onclick(View v) {
 
@@ -240,7 +247,7 @@ public class hospitalfind extends FragmentActivity implements
                 .position(sydney)
                 .title("Kurmitola General hospital"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
-        LatLng rasel = new LatLng(23.776366, 90.411461);
+        LatLng  rasel = new   LatLng   (23.776366, 90.411461);
         mMap.addMarker(new MarkerOptions()
                 .position(rasel)
                 .title("heikh Rasel Gastroliver Institute and  Hospital"));
@@ -265,6 +272,9 @@ public class hospitalfind extends FragmentActivity implements
                 .position(kwait)
                 .title("Bangladesh Kuwait Moitree Hospital, Uttara, Dhaka"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(kwait));
+
+
+
 
 
     }
