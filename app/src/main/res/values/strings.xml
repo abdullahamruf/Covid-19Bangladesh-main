@@ -3,6 +3,9 @@
     <string name="hospital">Hospital</string>
     <string name="trace">Trace World</string>
     <string name="bd">Trace Bangladesh</string>
+
+    <string name="hospital_name">Kashiani new hospital</string>
+    <string name="gopal1">Doctors Quarter Sheksaherakhatun MCH,Gopalgonj</string>
     <string name="instruction">Instructions</string>
     <string name="title_activity_hospitalfind">Map</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
@@ -96,4 +99,5 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_g1">Map</string>
 </resources>

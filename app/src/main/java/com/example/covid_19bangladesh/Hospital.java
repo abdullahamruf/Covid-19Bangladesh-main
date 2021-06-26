@@ -143,7 +143,7 @@ btn.setOnClickListener(new View.OnClickListener() {
             tv.setText("Click Your Divison To See Hospital");
             Toast toast = new Toast(getApplicationContext());
             toast.setGravity(Gravity.BOTTOM, 0, 100);
-            toast.setDuration(Toast.LENGTH_LONG);
+            toast.setDuration(Toast.LENGTH_SHORT);
             toast.setView(layout);
             toast.show();
 

@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 tv.setText("COVID-19 HOSPITAL IN DHAKA CITY");
                 Toast toast = new Toast(getApplicationContext());
                 toast.setGravity(Gravity.CENTER_VERTICAL, 0, 100);
-                toast.setDuration(Toast.LENGTH_LONG);
+                toast.setDuration(Toast.LENGTH_SHORT);
                 toast.setView(layout);
                 toast.show();
 

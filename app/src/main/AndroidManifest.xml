@@ -20,14 +20,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Covid19Bangladesh">
-        <activity android:name=".alldivision"></activity>
-        <activity
-            android:name=".DetailActivity"
-            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar" />
-        <activity
-            android:name=".AffectedCountries"
-            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar" />
-        <activity android:name=".traceworld" />
+        <activity android:name=".tungipara"></activity>
+        <activity android:name=".muktijodda" />
+        <activity android:name=".kahsiani" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -40,6 +35,19 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
+        <activity
+            android:name=".g1"
+            android:label="@string/title_activity_g1" />
+        <activity android:name=".list_item_1" />
+        <activity android:name=".dhakadivison" />
+        <activity android:name=".alldivision" />
+        <activity
+            android:name=".DetailActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar" />
+        <activity
+            android:name=".AffectedCountries"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar" />
+        <activity android:name=".traceworld" />
         <activity
             android:name=".hospitalfind"
             android:label="@string/title_activity_hospitalfind" />
