@@ -21,8 +21,8 @@ public class dhakadivison  extends AppCompatActivity {
 
         listView = (ListView) findViewById(R.id.list);
         String[] values = new String[]{"DOCTORS QUARTER SHEKSAHERAKHATUN MCH,GOPALGANJ ","KASHIANI NEW HOSPITAL ,GOPALGANJ",
-                "MUKTIJODDHA COMPLEX, MOKSEDPUR,GOPALGANJ", "TUNGIPARA UHC NEW BUILDING,GOPALGANJ",
-                "UPOZILASASTHO COMPLEX NEW BUILDING, SALTA", "List View onClick Source Code", "List View Array Adapter Item Click",
+                "MUKTIJODDHA COMPLEX, MOKSEDPUR,GOPALGANJ", "TUNGIPARA UHC NEW BUILDING,GOPALGANJ"
+                , "UPAZILLA SASTHOCOMPLEX,SALTA,   FARIDPUR", "SODOR HOSPITAL,SARIATPUR",
         };
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
@@ -47,6 +47,10 @@ public class dhakadivison  extends AppCompatActivity {
                 }
                 if (position == 3) {
                     Intent myIntent = new Intent(view.getContext(),tungipara.class);
+                    startActivityForResult(myIntent, 0);
+                }
+                if (position == 4  || position==5) {
+                    Intent myIntent = new Intent(view.getContext(),alldhakadivison.class);
                     startActivityForResult(myIntent, 0);
                 }
             }

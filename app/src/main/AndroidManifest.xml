@@ -20,7 +20,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Covid19Bangladesh">
-        <activity android:name=".tungipara"></activity>
+        <activity android:name=".alldhakadivison"></activity>
+        <activity android:name=".tungipara" />
         <activity android:name=".muktijodda" />
         <activity android:name=".kahsiani" />
         <!--

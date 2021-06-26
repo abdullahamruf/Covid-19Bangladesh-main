@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/scrl"
+    android:layout_height="match_parent"
+    tools:context=".alldhakadivison">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/l1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sodor hospital,SARIATPUR"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="20dp"
+            android:textColor="	#006600"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal" />
+
+
+
+
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Seat 20"
+            android:textStyle="bold"
+            android:textColor="#000"
+
+            android:textSize="28sp"/>
+        <Button
+
+            android:id="@+id/SS"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/round"
+            android:layout_gravity="center"
+            android:text="Get Hospital Direction"
+            android:onClick="goTrackhospital"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:padding="5dp"
+            tools:ignore="OnClick" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upazillasasthocomplex,salta,Faridpur"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="20dp"
+            android:textColor="	#006600"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal" />
+
+
+
+
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Seat 50"
+            android:textStyle="bold"
+            android:textColor="#000"
+
+            android:textSize="28sp"/>
+        <Button
+
+            android:id="@+id/btnfar"
+            android:layout_marginTop="20dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:background="@drawable/round"
+            android:layout_gravity="center"
+            android:text="Get Hospital Direction"
+            android:onClick="goTrackhospital"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:padding="5dp"
+            tools:ignore="OnClick" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
