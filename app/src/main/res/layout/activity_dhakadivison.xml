@@ -3,8 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/lightWhite"
+    android:background="#D3D3D3 "
     android:orientation="vertical"
+    android:textAlignment="center"
     tools:context="com.example.covid_19bangladesh.dhakadivison"
     android:weightSum="1">
 

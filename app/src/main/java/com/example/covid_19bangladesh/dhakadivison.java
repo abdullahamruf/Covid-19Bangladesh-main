@@ -22,7 +22,9 @@ public class dhakadivison  extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.list);
         String[] values = new String[]{"DOCTORS QUARTER SHEKSAHERAKHATUN MCH,GOPALGANJ ","KASHIANI NEW HOSPITAL ,GOPALGANJ",
                 "MUKTIJODDHA COMPLEX, MOKSEDPUR,GOPALGANJ", "TUNGIPARA UHC NEW BUILDING,GOPALGANJ"
-                , "UPAZILLA SASTHOCOMPLEX,SALTA,   FARIDPUR", "SODOR HOSPITAL,SARIATPUR",
+                , "UPAZILLA SASTHOCOMPLEX,SALTA,   FARIDPUR", "SODOR HOSPITAL,SARIATPUR","MA OHS SHISHU KOLLAN KENDRO, MEGHDUBI,GAZIPUR"
+                ,"ZILLA HOSPITAL,TRAUMACENTRE,TANGAIL","100 BED ZILLA HOSPITAL,NARSHINGDI","250 SOJJA HOSPITAL NEW,MADARIPUR"
+
         };
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
@@ -33,23 +35,8 @@ public class dhakadivison  extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                if (position == 0) {
-                    Intent myIntent = new Intent(view.getContext(), list_item_1.class);
-                    startActivityForResult(myIntent, 0);
-                }
-                if (position == 1) {
-                    Intent myIntent = new Intent(view.getContext(), kahsiani.class);
-                    startActivityForResult(myIntent, 0);
-                }
-                if (position == 2) {
-                    Intent myIntent = new Intent(view.getContext(),muktijodda.class);
-                    startActivityForResult(myIntent, 0);
-                }
-                if (position == 3) {
-                    Intent myIntent = new Intent(view.getContext(),tungipara.class);
-                    startActivityForResult(myIntent, 0);
-                }
-                if (position == 4  || position==5) {
+
+                if (position == 0  ||position == 1  ||position == 2  ||position == 3  ||position == 4  || position==5 || position ==6 || position ==7 || position ==8 || position ==9) {
                     Intent myIntent = new Intent(view.getContext(),alldhakadivison.class);
                     startActivityForResult(myIntent, 0);
                 }

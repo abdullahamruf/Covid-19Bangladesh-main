@@ -164,12 +164,41 @@ public class g1 extends FragmentActivity implements
                 .position(muktijodda)
                 .title("Muktijiddhacomplex,moksedpur"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(muktijodda));
+        LatLng sariatpur = new LatLng(23.21174, 90.34845);
+        mMap.addMarker(new MarkerOptions()
+                .position(sariatpur)
+                .title("Sadar Hospital Sariatpur"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(sariatpur));
         LatLng tungipara = new LatLng(22.893981, 89.889685);
         mMap.addMarker(new MarkerOptions()
                 .position(tungipara)
                 .title("Tungipara UHC new building"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(tungipara));
-
+        LatLng faridpur = new LatLng(23.47616, 89.81336);
+        mMap.addMarker(new MarkerOptions()
+                .position(faridpur)
+                .title("Upazilla Sasthocomplex,Salta,Faridpur"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(faridpur));
+        LatLng gazipur = new LatLng(23.76676, 90.36574);
+        mMap.addMarker(new MarkerOptions()
+                .position(gazipur)
+                .title("Ma Oh ShishukollanKendro, Meghdubi ,gazipur"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(gazipur));
+        LatLng tangail = new LatLng(24.26494, 89.92916);
+        mMap.addMarker(new MarkerOptions()
+                .position(tangail)
+                .title("Zilla hospital,traumacentre,tangail"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(tangail));
+        LatLng nars= new LatLng(23.92984, 90.70290);
+        mMap.addMarker(new MarkerOptions()
+                .position(nars)
+                .title("100 Bed zilla hospital,Narshingdi"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(nars));
+        LatLng madari= new LatLng(23.16550, 90.21209);
+        mMap.addMarker(new MarkerOptions()
+                .position(madari)
+                .title("250 sojja hospital new,madaripur"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(madari));
 
     }
 

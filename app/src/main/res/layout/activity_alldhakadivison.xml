@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:id="@+id/scrl"
+    android:visibility="gone"
+    android:background="#fff"
     android:layout_height="match_parent"
     tools:context=".alldhakadivison">
 
@@ -14,12 +16,55 @@
         android:orientation="vertical">
 
         <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#006600"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+
+            android:textAlignment="center"
+            android:text="@string/gopal1"
+            android:textSize="28sp" />
+
+        <TextView
+android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text=" Seat 50"
+            android:textSize="28sp" />
+
+
+
+        <Button
+
+            android:id="@+id/btnTrac1"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:layout_marginTop="40dp"
+
+            android:background="@drawable/shape"
+            android:layout_gravity="center"
+            android:text="Get Hospital Direction"
+            android:onClick="goTrackhospital"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:padding="5dp"
+            tools:ignore="OnClick" />
+
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Sodor hospital,SARIATPUR"
             android:textAlignment="center"
             android:textAllCaps="true"
-            android:textSize="20dp"
+            android:textSize="28dp"
             android:textColor="	#006600"
             android:textStyle="bold"
             android:layout_marginLeft="20dp"
@@ -48,7 +93,135 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:background="@drawable/round"
+            android:background="@drawable/shape"
+            android:layout_gravity="center"
+            android:text="Get Hospital Direction"
+            android:onClick="goTrackhospital"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:padding="5dp"
+            tools:ignore="OnClick" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#006600"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="Muktijiddhacomplex , moksedpur"
+            android:textSize="28sp" />
+
+        <TextView
+
+android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text=" Seat 5"
+            android:textSize="28sp" />
+
+
+
+        <Button
+
+            android:id="@+id/mutijodda"
+            android:layout_marginTop="60dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:background="@drawable/shape"
+            android:layout_gravity="center"
+            android:text="Get Hospital Direction"
+            android:onClick="goTrackhospital"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:padding="5dp"
+            tools:ignore="OnClick" />
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="#006600"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="Tungipara UHC new building,gopalganj"
+            android:textSize="28sp" />
+
+        <TextView
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text=" Seat 5"
+            android:textStyle="bold"
+            android:textSize="28sp" />
+
+
+
+        <Button
+
+            android:id="@+id/tungipara"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+android:layout_marginTop="40dp"
+            android:background="@drawable/shape"
+            android:layout_gravity="center"
+            android:text="Get Hospital Direction"
+            android:onClick="goTrackhospital"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:padding="5dp"
+            tools:ignore="OnClick" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#006600"
+            android:textAllCaps="true"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:text="@string/hospital_name"
+            android:textSize="28sp" />
+
+        <TextView
+
+android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:gravity="center"
+            android:text=" Seat 5"
+android:textStyle="bold"
+            android:textSize="28sp" />
+
+
+
+        <Button
+
+            android:id="@+id/kash"
+
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+android:layout_marginTop="40dp"
+            android:background="@drawable/shape"
             android:layout_gravity="center"
             android:text="Get Hospital Direction"
             android:onClick="goTrackhospital"
@@ -59,13 +232,14 @@
 
 
 
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Upazillasasthocomplex,salta,Faridpur"
+            android:text="Upazilla sasthocomplex,salta,Faridpur"
             android:textAlignment="center"
             android:textAllCaps="true"
-            android:textSize="20dp"
+            android:textSize="28dp"
             android:textColor="	#006600"
             android:textStyle="bold"
             android:layout_marginLeft="20dp"
@@ -96,14 +270,244 @@
             android:layout_height="wrap_content"
 
 
-            android:background="@drawable/round"
+            android:background="@drawable/shape"
             android:layout_gravity="center"
             android:text="Get Hospital Direction"
             android:onClick="goTrackhospital"
-            android:textColor="@android:color/white"
+            android:textColor="#fff"
             android:textSize="15sp"
             android:padding="5dp"
             tools:ignore="OnClick" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sodor hospita,shariatpur"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="28dp"
+            android:textColor="	#006600"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal" />
+
+
+
+
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Seat 20"
+            android:textStyle="bold"
+            android:textColor="#000"
+
+            android:textSize="28sp"/>
+        <Button
+
+            android:id="@+id/sariatpur"
+            android:layout_marginTop="20dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:background="@drawable/shape"
+            android:layout_gravity="center"
+            android:text="Get Hospital Direction"
+            android:onClick="goTrackhospital"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:padding="5dp"
+            tools:ignore="OnClick" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ma Oh ShishukollanKendro, Meghdubi ,gazipur"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="28dp"
+            android:textColor="	#006600"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal" />
+
+
+
+
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Seat 20"
+            android:textStyle="bold"
+            android:textColor="#000"
+
+            android:textSize="28sp"/>
+        <Button
+
+            android:id="@+id/gazipurpur"
+            android:layout_marginTop="20dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:background="@drawable/shape"
+            android:layout_gravity="center"
+            android:text="Get Hospital Direction"
+            android:onClick="goTrackhospital"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:padding="5dp"
+            tools:ignore="OnClick" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zilla hospital,traumacentre,tangail"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="28dp"
+            android:textColor="	#006600"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal" />
+
+
+
+
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Seat 80"
+            android:textStyle="bold"
+            android:textColor="#000"
+
+            android:textSize="28sp"/>
+        <Button
+
+            android:id="@+id/tangail"
+            android:layout_marginTop="20dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:background="@drawable/shape"
+            android:layout_gravity="center"
+            android:text="Get Hospital Direction"
+            android:onClick="goTrackhospital"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:padding="5dp"
+            tools:ignore="OnClick" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="100 Bed zilla hospital,Narshingdi"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="28dp"
+            android:textColor="	#006600"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal" />
+
+
+
+
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Seat 100"
+            android:textStyle="bold"
+            android:textColor="#000"
+
+            android:textSize="28sp"/>
+        <Button
+
+            android:id="@+id/narshingdi"
+            android:layout_marginTop="20dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:background="@drawable/shape"
+            android:layout_gravity="center"
+            android:text="Get Hospital Direction"
+            android:onClick="goTrackhospital"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:padding="5dp"
+            tools:ignore="OnClick" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="250 sojja hospital new,madaripur"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="28dp"
+            android:textColor="	#006600"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal" />
+
+
+
+
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Seat 16"
+            android:textStyle="bold"
+            android:textColor="#000"
+
+            android:textSize="28sp"/>
+        <Button
+
+            android:id="@+id/madaripur"
+            android:layout_marginTop="20dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:background="@drawable/shape"
+            android:layout_gravity="center"
+            android:text="Get Hospital Direction"
+            android:onClick="goTrackhospital"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:padding="5dp"
+            tools:ignore="OnClick" />
+
+
+
+
+
 
 
 
