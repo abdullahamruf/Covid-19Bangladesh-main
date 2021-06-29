@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:id="@+id/scrl"
     android:visibility="gone"
-    android:background="#fff"
+    android:background="#FFF"
     android:layout_height="match_parent"
     tools:context=".alldhakadivison">
 

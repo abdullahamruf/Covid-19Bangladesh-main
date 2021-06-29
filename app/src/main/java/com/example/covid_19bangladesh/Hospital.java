@@ -46,7 +46,7 @@ public class Hospital extends AppCompatActivity {
             @Override
 
             public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_DIAL);
+                Intent intent = new Intent(Intent.ACTION_CALL);
                 intent.setData(Uri.parse("tel:01711307069"));
                 startActivity(intent);
 
