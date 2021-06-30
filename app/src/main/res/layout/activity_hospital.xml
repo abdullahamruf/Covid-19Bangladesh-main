@@ -53,14 +53,15 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="15dp"
                         android:gravity="center_horizontal" />
-
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-
+                        android:background="#000"
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"
-                        android:layout_marginTop="5dp"/>
+                        />
+
+
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -133,13 +134,7 @@
                         android:layout_marginRight="20dp"
                         />
 
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:background="#fff"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"
-                        />
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -239,14 +234,14 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginTop="15dp"
                         android:gravity="center_horizontal" />
-
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:background="#000000"
+                        android:background="#000"
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"
-                        android:layout_marginTop="5dp"/>
+                        />
+
 
                     <RelativeLayout
                         android:layout_width="match_parent"

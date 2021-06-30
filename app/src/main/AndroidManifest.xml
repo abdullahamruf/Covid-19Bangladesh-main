@@ -20,9 +20,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Covid19Bangladesh">
-        <activity android:name=".alldhakadivison"
-            android:theme="@style/Theme.Design.NoActionBar">
+        <activity android:name=".Startactivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
         </activity>
+        <activity
+            android:name=".alldhakadivison"
+            android:theme="@style/Theme.Design.NoActionBar"></activity>
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -38,13 +47,12 @@
         <activity
             android:name=".g1"
             android:label="@string/title_activity_g1" />
-        <activity android:name=".dhakadivison"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
-
-            />
-        <activity android:name=".alldivision"
-            android:theme="@style/Theme.AppCompat.NoActionBar"
-            />
+        <activity
+            android:name=".dhakadivison"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".alldivision"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".DetailActivity"
             android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar" />
@@ -55,17 +63,13 @@
         <activity
             android:name=".hospitalfind"
             android:label="@string/title_activity_hospitalfind" />
-        <activity android:name=".Hospital"
-            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
-            />
-        <activity android:name=".MainActivity"
-            android:theme="@style/Theme.Design.NoActionBar"
-            >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity
+            android:name=".Hospital"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.Design.NoActionBar">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
