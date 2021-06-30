@@ -250,7 +250,7 @@ public class hospitalfind extends FragmentActivity implements
         LatLng  rasel = new   LatLng   (23.776366, 90.411461);
         mMap.addMarker(new MarkerOptions()
                 .position(rasel)
-                .title("heikh Rasel Gastroliver Institute and  Hospital"));
+                .title("sheikh Rasel Gastroliver Institute and  Hospital"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(rasel));
         LatLng lalkuthi = new LatLng(23.788373, 90.346210);
         mMap.addMarker(new MarkerOptions()
@@ -272,6 +272,12 @@ public class hospitalfind extends FragmentActivity implements
                 .position(kwait)
                 .title("Bangladesh Kuwait Moitree Hospital, Uttara, Dhaka"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(kwait));
+
+        LatLng kacpur = new LatLng(23.70305, 90.38872);
+        mMap.addMarker(new MarkerOptions()
+                .position(kacpur)
+                .title("Sajida foundation hospital,Kacpur"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(kacpur));
 
 
 

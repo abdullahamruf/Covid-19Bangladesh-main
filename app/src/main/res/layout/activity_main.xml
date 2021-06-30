@@ -113,6 +113,7 @@ android:layout_marginTop="60dp"
 
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
+            android:id="@+id/traceban"
             android:layout_height="0dp"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
